@@ -5,20 +5,20 @@
 class Pcu < Formula
   desc ""
   homepage "https://github.com/khanakia/homebrew-pcu"
-  version "0.0.2"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/khanakia/pcu/releases/download/v0.0.2/pcu_Darwin_arm64.tar.gz"
-      sha256 "39bde3de9ff5b79d2eaf5183840ba454e93ba6e2c0433c7e5e0ac8d989e6de96"
+      url "https://github.com/khanakia/pcu/releases/download/v0.2.0/pcu_Darwin_arm64.tar.gz"
+      sha256 "d05bd28f68d58e8934c696fabf968edc381ac0980b15e927445dd72bef8fbe1d"
 
       def install
         bin.install "pcu"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/khanakia/pcu/releases/download/v0.0.2/pcu_Darwin_x86_64.tar.gz"
-      sha256 "b6dcd96e041c711745d60488b60781382fabdb717f1b1e4417a470d29f479e5c"
+      url "https://github.com/khanakia/pcu/releases/download/v0.2.0/pcu_Darwin_x86_64.tar.gz"
+      sha256 "1308a5d7a05ea39423b39ccdfa79a01ffaeca28e6f3a7ae745850bba5a69b452"
 
       def install
         bin.install "pcu"
@@ -28,16 +28,16 @@ class Pcu < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/khanakia/pcu/releases/download/v0.0.2/pcu_Linux_arm64.tar.gz"
-      sha256 "657bfda2de0575ae27967fd315a87230982e5aaa7262a44d2dd853049be7ce30"
+      url "https://github.com/khanakia/pcu/releases/download/v0.2.0/pcu_Linux_arm64.tar.gz"
+      sha256 "ed902273a23483ca838eb7f67dfdf00cc8652ca122cacc4912d3d737a0bccf65"
 
       def install
         bin.install "pcu"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/khanakia/pcu/releases/download/v0.0.2/pcu_Linux_x86_64.tar.gz"
-      sha256 "fcb59a92bdc8a2bb36bb537b9064f1c673bf063e3c0bd1eb89ee0d9df3b4a350"
+      url "https://github.com/khanakia/pcu/releases/download/v0.2.0/pcu_Linux_x86_64.tar.gz"
+      sha256 "ffa75b1aab62f912ac268dc0de1039e4569e51ac106146e311b9b4cd4b5433e6"
 
       def install
         bin.install "pcu"
